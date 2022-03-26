@@ -1,0 +1,12 @@
+.nav {
+    grid-area: n;
+    background: dimgray;
+    padding: 20px;
+}
+.item a {
+    color: aliceblue;
+    text-decoration: none;
+}
+.item a.active {
+    color: indigo;
+}
