@@ -26,7 +26,6 @@ const ProfileInfo = (props) => {
                 <div> twitter: {props.profile.contacts.twitter} </div>
             </div>
         </div>
-        ava+description
     </div>
 
 }
