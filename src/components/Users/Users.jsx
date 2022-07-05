@@ -36,9 +36,7 @@ let Users = (props) => {
      <button onClick={() => {
          axios.delete(`https://social-network.samuraijs.com/api/1.0/follow/${u.id}`, {
              withCredentials: true,
-             headers: {
-                 "API-KEY": "bf527952-90e1-4dc2-a751-8d0fb4bf8491"
-             }
+             headers: {}
          })
              .then(response => {
                  if (response.data.resultCode == 0) {
