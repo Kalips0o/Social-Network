@@ -1,6 +1,7 @@
 import React from 'react';
 import s from './ProfileInfo.module.css';
 import Preloader from "../../Common/Preloader/Preloader";
+import ProfileStatus from "../ProfileStatus";
 
 
 const ProfileInfo = (props) => {
@@ -9,14 +10,17 @@ const ProfileInfo = (props) => {
     }
     return <div>
         <div>
-            <img
-                src='https://londonoktober.github.io/UdacityPortfolioSite/images/1200x400.jpg'/>
+            {/*<img*/}
+            {/*    src='https://londonoktober.github.io/UdacityPortfolioSite/images/1200x400.jpg'/>*/}
         </div>
+
         <div className={s.descriptionBlock}>
             <div>
                 Имя: {props.profile.fullName}
             </div>
             <img src={props.profile.photos.large}/>
+
+            <ProfileStatus status={"Hello me friends"}/>
             <div>
                 Девиз: {props.profile.aboutMe}
             </div>
@@ -24,6 +28,7 @@ const ProfileInfo = (props) => {
                 <div> instagram: {props.profile.contacts.instagram} </div>
                 <div> vk: {props.profile.contacts.vk} </div>
                 <div> twitter: {props.profile.contacts.twitter} </div>
+
             </div>
         </div>
     </div>
