@@ -18,9 +18,14 @@ const ProfileInfo = (props) => {
             <div>
                 Имя: {props.profile.fullName}
             </div>
-            <img src={props.profile.photos.large}/>
+            <div>
+                <img src={props.profile.photos.large}/>
+            </div>
+            <div>
+                <ProfileStatus status={props.status} updateStatus={props.updateStatus}/>
+            </div>
 
-            <ProfileStatus status={"Hello me friends"}/>
+
             <div>
                 Девиз: {props.profile.aboutMe}
             </div>
