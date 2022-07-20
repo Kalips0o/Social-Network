@@ -4,12 +4,16 @@
   "private": true,
   "dependencies": {
     "axios": "^0.27.2",
+    "final-form": "^4.20.7",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
+    "react-final-form": "^6.5.9",
+    "react-form": "^4.0.1",
     "react-redux": "^8.0.1",
     "react-router-dom": "^4.3.1",
     "react-scripts": "5.0.1",
     "redux": "^4.2.0",
+    "redux-form": "^8.3.8",
     "redux-thunk": "^2.4.1"
   },
   "scripts": {
