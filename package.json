@@ -2,7 +2,7 @@
   "name": "react-way-of-samurai",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/Kalips0o/Social-network.git",
+  "homepage": "https://Kalips0o.github.io/Social-network/",
   "dependencies": {
     "axios": "^0.27.2",
     "final-form": "^4.20.7",
