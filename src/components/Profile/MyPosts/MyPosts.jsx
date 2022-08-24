@@ -7,25 +7,28 @@ import {Textarea} from "../../Common/FormsControl/FormsControls";
 
 const maxLength10 = maxLengthCreator(10)
 
-const MyPosts = (props) => {
-    let postsElements =
-        props.posts.map(p => <Post message={p.message} key={p.id} likesCount={p.likesCount}/>);
+class MyPosts extends React.Component {
+
+    render() {
+        let postsElements =
+            this.props.posts.map(p => <Post message={p.message} key={p.id} likesCount={p.likesCount}/>);
 
 
-    let onAddPost = (values) => {
-        props.addPost(values.newPostText)
-    }
+        let onAddPost = (values) => {
+            this.props.addPost(values.newPostText)
+        }
 
 
-    return (
-        <div className={s.postsBlock}>
-            <h3>My posts</h3>
-            <AddNewPostFormRedux onSubmit={onAddPost}/>
-            <div className={s.posts}>
-                {postsElements}
+        return (
+            <div className={s.postsBlock}>
+                <h3>My posts</h3>
+                <AddNewPostFormRedux onSubmit={onAddPost}/>
+                <div className={s.posts}>
+                    {postsElements}
+                </div>
             </div>
-        </div>
-    )
+        )
+    }
 }
 
 const AddNewPostForm = (props) => {
