@@ -4,35 +4,32 @@ import Preloader from "../../Common/Preloader/Preloader";
 import ProfileStatusWithHooks from "../ProfileStatusWithHooks";
 
 
-const ProfileInfo = (props) => {
-    if (!props.profile) {
+const ProfileInfo = ({profile, status, updateStatus}) => {
+    if (!profile) {
         return <Preloader/>
     }
     return <div>
-        <div>
-            {/*<img*/}
-            {/*    src='https://londonoktober.github.io/UdacityPortfolioSite/images/1200x400.jpg'/>*/}
-        </div>
+
 
         <div className={s.descriptionBlock}>
             <div>
-                Имя: {props.profile.fullName}
+                Имя: {profile.fullName}
             </div>
             <div>
-                <img src={props.profile.photos.large}/>
+                <img src={profile.photos.large}/>
             </div>
             <div>
-                <ProfileStatusWithHooks status={props.status} updateStatus={props.updateStatus}/>
+                <ProfileStatusWithHooks status={status} updateStatus={updateStatus}/>
             </div>
 
 
             <div>
-                Девиз: {props.profile.aboutMe}
+                Девиз: {profile.aboutMe}
             </div>
             <div>
-                <div> instagram: {props.profile.contacts.instagram} </div>
-                <div> vk: {props.profile.contacts.vk} </div>
-                <div> twitter: {props.profile.contacts.twitter} </div>
+                <div> instagram: {profile.contacts.instagram} </div>
+                <div> vk: {profile.contacts.vk} </div>
+                <div> twitter: {profile.contacts.twitter} </div>
 
             </div>
         </div>
