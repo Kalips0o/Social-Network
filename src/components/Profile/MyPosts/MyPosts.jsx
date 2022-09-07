@@ -11,7 +11,7 @@ class MyPosts extends React.Component {
 
     render() {
         let postsElements =
-            this.props.posts.map(p => <Post message={p.message} key={p.id} likesCount={p.likesCount}/>);
+            this.props.posts.map(p => <Post key={p.id} message={p.message} likesCount={p.likesCount}/>);
 
 
         let onAddPost = (values) => {
