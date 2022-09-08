@@ -1,12 +1,20 @@
 .header {
+    margin-top: 10px;
+    margin-bottom: 10px;
     grid-area: h;
-    background: indigo;
+    border: 1px solid rgb(253, 255, 255);
+    background: #9fa1a1;
+
+
 }
 
 .header img {
-    width: 50px;
+
+    width: 60px;
     margin-left: 30px;
+    margin-top: 10px;
 }
+
 
 .loginBlock {
     margin-top: 15px;
@@ -16,4 +24,12 @@
 
 .loginBlock a {
     color: white;
+}
+
+.item {
+    color: indigo;
+}
+
+.item img {
+    width: 30px;
 }
