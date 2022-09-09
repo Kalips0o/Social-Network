@@ -12,28 +12,11 @@
 }
 
 .app-wrapper-content {
-    background-color: rgba(255, 255, 255, 0.66);
+    background: rgba(159, 161, 161, 0.46);
     margin-left: 10px;
     border: 1px solid #9fa1a1;
-    border-radius: 7px;
+
     grid-area: c;
 
 }
 
-
-
-
-
-
-
-
-
-/*
-
-/messages
-/dialogs
-
-/dialogs/3
-/dialogs/2
-
-*/

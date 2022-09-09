@@ -1,18 +1,22 @@
 .nav {
     grid-area: n;
-    background: rgba(159, 161, 161, 0.49);
+    background: rgba(159, 161, 161, 0.46);
 
-    padding: 20px;
-    border: 1px solid rgb(253, 255, 255);
+    padding-left: 20px;
+    padding-top: 30px;
+    border: 1px solid #9fa1a1;
     /*border-radius: 7px;*/
 }
 
 .item a {
-    font-weight: normal;
+    font-family: Monospaced;
+    line-height: 2.2;
+    font-weight: lighter;
     font-size: 15px;
-    padding-left: 5px;
-    color: #171515;
-    line-height: 2;
+    padding-left: 30px;
+    padding-top: 30px;
+    color: #000101;
+
     text-decoration: none;
 }
 
