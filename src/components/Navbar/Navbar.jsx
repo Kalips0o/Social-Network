@@ -13,26 +13,26 @@ import FriendsIco from './../../assets/img/Icons/friends.png';
 const NavBar = () => {
     return <nav className={s.nav}>
         <div className={s.item}>
-            <NavLink to="/profile" activeClassName={s.activeLink}><img src={ProfileIco}/> Profile </NavLink>
+            <NavLink to="/profile"><img src={ProfileIco}/> Profile </NavLink>
         </div>
 
         <div className={s.item}>
-            <NavLink to='/Dialogs' activeClassName={s.activeLink}><img src={MessagesIco}/> Messages </NavLink>
+            <NavLink to='/Dialogs'><img src={MessagesIco}/> Messages </NavLink>
         </div>
         <div className={s.item}>
-            <NavLink to='/News' activeClassName={s.activeLink}><img src={NewsIco}/> News </NavLink>
+            <NavLink to='/News'><img src={NewsIco}/> News </NavLink>
         </div>
         <div className={s.item}>
-            <NavLink to='/Music' activeClassName={s.activeLink}> <img src={MusicIco}/> Music </NavLink>
+            <NavLink to='/Music'> <img src={MusicIco}/> Music </NavLink>
         </div>
         <div className={s.item}>
-            <NavLink to='/Setting' activeClassName={s.activeLink}> <img src={SettingIco}/> Setting </NavLink>
+            <NavLink to='/Setting'> <img src={SettingIco}/> Setting </NavLink>
         </div>
         <div className={s.item}>
-            <NavLink to='/Users' activeClassName={s.activeLink}><img src={UsersIco}/> Users </NavLink>
+            <NavLink to='/Users'><img src={UsersIco}/> Users </NavLink>
         </div>
         <div className={s.item}>
-            <NavLink to='/Friends' activeClassName={s.activeLink}><img src={FriendsIco}/> Friends </NavLink>
+            <NavLink to='/Friends'><img src={FriendsIco}/> Friends </NavLink>
         </div>
     </nav>
 }

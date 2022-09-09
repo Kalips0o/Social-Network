@@ -7,23 +7,20 @@
     border: 1px solid #9fa1a1;
     /*border-radius: 7px;*/
 }
-
 .item a {
-    font-family: Monospaced;
-    line-height: 2.2;
-    font-weight: lighter;
+    font-weight: normal;
     font-size: 15px;
-    padding-left: 30px;
-    padding-top: 30px;
-    color: #000101;
-
+    padding-left: 5px;
+    color: #171515;
+    line-height: 2;
     text-decoration: none;
 }
+
 
 .item a.active {
     color: indigo;
 }
 
 .item img {
-    width: 20px;
+    width: 15px;
 }
