@@ -11,11 +11,27 @@ let InitialState = {
         {id: 6, name: 'Valera'}
     ],
     messages: [
-        {id: 1, message: 'Hi'},
-        {id: 2, message: 'How is your it-kamasutra?'},
-        {id: 3, message: 'Yo'},
-        {id: 4, message: 'Yo'},
-        {id: 5, message: 'Yo'}
+        {
+            id: 1,
+            sender: "Me",
+            message: "Hi!",
+            messageTime: "12:05"
+        },
+
+        {
+            id: 2,
+            sender: "User",
+            message: 'Hi! How are you?',
+            messageTime: "12:10"
+        },
+
+        {
+            id: 3,
+            sender: "Me",
+            message: "Fine, studying in IT-Incubator now. And how are you?",
+            messageTime: "12:20"
+        },
+
     ]
 };
 

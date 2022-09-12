@@ -1,22 +1,40 @@
-.descriptionBlock {
 
-    padding-left: 10px;
-    margin-top: 15px;
 
+.profileInfoBlock {
+    margin: 15px 0;
+    padding: 5px 10px;
 }
 
+.profileInfoBlock::after {
+    clear: both;
+    content: "";
+    display: table;
+}
 
+.profileAvatar {
+    float: left;
+    width: 150px;
+}
 
+.profileInfoBlock img {
+    width: 100%;
+    border-radius: 50%;
+}
 
-.userPhotoProfile {
+.profileInfo {
+    float: left;
+    margin-left: 25px;
+}
 
-    padding: 10px;
-    width: 200px;
-    height: 200px;
+.profileInfo p {
+    margin-bottom: 5px;
+}
+
+.profileInfo button {
+    padding: 5px 15px;
 }
 
 .contact {
-
-    padding-left: 10px;
-    color: #333333;
+    margin-bottom: 5px;
+    padding-left: 15px;
 }

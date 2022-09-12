@@ -1,0 +1,39 @@
+.dialog {
+    padding-bottom: 5px;
+}
+
+.dialog a {
+    display: block;
+    padding: 10px;
+    background: darkgrey;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.dialog a::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.dialog a.active {
+    background: rgba(175, 0, 0, 0.87);
+}
+
+.dialog img {
+    display: block;
+    float: left;
+    width: 40px;
+    border-radius: 20px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.dialog span {
+    display: block;
+    float: left;
+    margin-left: 10px;
+    padding: 10px 0;
+    font-size: 15px;
+}

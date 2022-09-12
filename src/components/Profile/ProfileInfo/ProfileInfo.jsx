@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import s from './ProfileInfo.module.css';
 import Preloader from "../../Common/Preloader/Preloader";
 import ProfileStatusWithHooks from "./ProfileStatusWithHooks";
-import userPhoto from "../../../assets/img/206853.png";
+import userPhoto from "../../../assets/img/user.webp";
 import ProfileDataForm from "./ProfileDataForm";
 
 const ProfileInfo = ({profile, status, updateStatus, isOwner, savePhoto, saveProfile}) => {
@@ -28,9 +28,9 @@ const ProfileInfo = ({profile, status, updateStatus, isOwner, savePhoto, savePro
     }
 
     return (
-        <div>
-            <div className={s.descriptionBlock}>
-                <img src={profile.photos.large || userPhoto} className={s.mainPhoto}/>
+        <div className={s.profileInfoBlock}>
+            <div className={s.profileAvatar}>
+                <img src={profile.photos.large || userPhoto}/>
                 {isOwner && <input type={"file"} onChange={onMainPhotoSelected}/>}
 
                 {editMode
@@ -46,7 +46,7 @@ const ProfileInfo = ({profile, status, updateStatus, isOwner, savePhoto, savePro
 }
 
 const ProfileData = ({profile, isOwner, goToEditMode}) => {
-    return <div className={s.infoBlock}>
+    return <div className={s.profileInfo}>
         {isOwner && <div>
             <button onClick={goToEditMode}>edit</button>
         </div>}
@@ -65,7 +65,7 @@ const ProfileData = ({profile, isOwner, goToEditMode}) => {
         <div>
             <b>About me</b>: {profile.aboutMe}
         </div>
-        <div>
+        <div className={s.contact}>
             <b>Contacts</b>: {Object.keys(profile.contacts).map(key => {
             return <Contact key={key} contactTitle={key} contactValue={profile.contacts[key]}/>
         })}

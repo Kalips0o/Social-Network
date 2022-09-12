@@ -1,10 +1,10 @@
 import React from 'react';
 
 
-const Friends = () => {
+const Friends = ({currentPage, totalUsersCount, pageSize, onPageChanged}) => {
     return (
         <div>
-            Friends
+            FRIENDS
         </div>
     )
 }

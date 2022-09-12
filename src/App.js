@@ -14,6 +14,7 @@ import {connect} from "react-redux";
 import {compose} from "redux";
 import {initializeApp} from "./redux/app-reducer";
 import Preloader from "./components/Common/Preloader/Preloader";
+import Friends from "./components/Friends/Friends";
 
 class App extends Component {
     componentDidMount() {
@@ -45,6 +46,7 @@ class App extends Component {
                     <Route path='/news' render={() => <News/>}/>
                     <Route path='/setting' render={() => <Setting/>}/>
                     <Route path='/login' render={() => <LoginPage/>}/>
+                    <Route path='/friends' render={() => <Friends/>}/>
 
 
                 </div>
