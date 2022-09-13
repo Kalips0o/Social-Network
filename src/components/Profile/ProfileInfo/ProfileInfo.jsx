@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import s from './ProfileInfo.module.css';
 import Preloader from "../../Common/Preloader/Preloader";
 import ProfileStatusWithHooks from "./ProfileStatusWithHooks";
-import userPhoto from "../../../assets/img/user.webp";
+import userPhoto from "../../../assets/img/UserPhoto/user.webp";
 import ProfileDataForm from "./ProfileDataForm";
 
 const ProfileInfo = ({profile, status, updateStatus, isOwner, savePhoto, saveProfile}) => {

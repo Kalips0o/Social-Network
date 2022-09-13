@@ -1,4 +1,6 @@
-
+.profileBackground img {
+    width: 100%;
+}
 
 .profileInfoBlock {
     margin: 15px 0;

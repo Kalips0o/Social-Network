@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Message.module.css';
-import avatar from './../../../assets/img/user.webp'
+import avatar from './../../../assets/img/UserPhoto/user.webp'
 
 export const Message = (props) => {
     const messageClassName = `${s.message} ${props.name === "Me" ? s.outgoing : s.incoming}`;
