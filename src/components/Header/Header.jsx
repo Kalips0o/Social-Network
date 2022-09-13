@@ -1,11 +1,12 @@
 import React from 'react';
 import s from './Header.module.css';
 import {NavLink} from "react-router-dom";
+import Logo from "./../../assets/img/Logo/LogoWhiteBlack.png";
 
 const Header = (props) => {
     return <header className={s.header}>
         <img
-            src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/RPC-JP_Logo.png/600px-RPC-JP_Logo.png'/>
+            src={Logo}/>
 
         <div className={s.loginBlock}>
             {props.isAuth ?

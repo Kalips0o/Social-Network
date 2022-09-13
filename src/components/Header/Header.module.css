@@ -24,16 +24,21 @@
 
 .header img {
 
-    width: 60px;
+    width: 140px;
     margin-left: 30px;
-    margin-top: 10px;
+    margin-top: 5px;
+}
+
+.logoText {
+    width: 200px;
+
 }
 
 
 .loginBlock {
-    margin-top: 15px;
+    margin-top: 20px;
     float: right;
-    margin-right: 15px;
+    margin-right: 20px;
 }
 
 .loginBlock a {
