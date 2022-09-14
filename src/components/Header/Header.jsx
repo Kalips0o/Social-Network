@@ -5,8 +5,12 @@ import Logo from "./../../assets/img/Logo/LogoWhiteBlack.png";
 
 const Header = (props) => {
     return <header className={s.header}>
-        <img src={Logo}/>
 
+        <div></div>
+
+        <NavLink to={'/profile'}>
+            <img src={Logo}/>
+        </NavLink>
         <div className={s.loginBlock}>
             {props.isAuth ?
                 <div className={s.userInfo}>
