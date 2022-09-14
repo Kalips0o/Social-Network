@@ -14,7 +14,7 @@ let User = ({user, followingInProgress, unfollow, follow}) => {
                              className={styles.userPhoto}/>
                         </NavLink>
                     </div>
-                    <div>
+                    <div className={styles.usersButtons}>
                         {user.followed
                             ? <button disabled={followingInProgress
                                 .some(id => id === user.id)}
@@ -32,13 +32,13 @@ let User = ({user, followingInProgress, unfollow, follow}) => {
                 </span>
             <span>
                     <span>
-                        <div>{user.name}</div>
-                        <div>{user.status}</div>
+                        <div className={styles.usersName}>{user.name}</div>
+                        {/*<div>{user.status}</div>*/}
                     </span>
-                    <span>
-                        <div>{"user.location.country"}</div>
-                        <div>{"user.location.city"}</div>
-                    </span>
+                {/*<span>*/}
+                {/*    <div>{"user.location.country"}</div>*/}
+                {/*    <div>{"user.location.city"}</div>*/}
+                {/*</span>*/}
                 </span>
         </div>)
 }
