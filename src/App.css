@@ -13,8 +13,8 @@
 
 .app-wrapper-content {
     background: rgba(159, 161, 161, 0.46);
-    margin-left: 10px;
-    border: 1px solid #9fa1a1;
+    margin-left: 5px;
+    /*border: 1px solid #9fa1a1;*/
 
     grid-area: c;
 

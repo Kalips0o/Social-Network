@@ -1,43 +1,54 @@
-.profileBackground img {
-    width: 100%;
-}
-
-.profileInfoBlock {
+.descriptionBlock {
     display: grid;
+    margin-top: 5px;
+    margin-left: 30px;
+    grid-template-columns: 260px   660px;
+}
+
+.status {
+    margin-left: 10px;
+}
+
+.descriptionBlock img {
     margin-top: 10px;
-    grid-template-columns: 260px 10px  600px;
-}
-
-.profileInfoBlock::after {
-    clear: both;
-    content: "";
-    display: table;
-}
-
-.profileAvatar {
-    float: left;
-    width: 150px;
-}
-
-.profileInfoBlock img {
-    width: 100%;
+    height: 200px;
+    width: 200px;
+    border: 2px ridge #000101;
     border-radius: 50%;
 }
 
-.profileInfo {
-    float: left;
-    margin-left: 25px;
+.profile {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(253, 255, 255, 0.31);
+    border-radius: 30px;
 }
 
-.profileInfo p {
-    margin-bottom: 5px;
+.description {
+    margin-top: 30px;
+    margin-left: 20px;
+    background-color: rgba(253, 255, 255, 0.31);
+    padding: 20px;
+    border-radius: 20px;
+
 }
 
-.profileInfo button {
-    padding: 5px 15px;
+
+.button {
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    color: white;
+    padding: 3px 6px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    background-image: linear-gradient(to right, #80e3ea 0%, #26537c 51%, #62aacd 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    transition: .5s;
 }
 
-.contact {
-    margin-bottom: 5px;
-    padding-left: 15px;
+.button:hover {
+    background-position: right center;
+    transform: scale(1.02);
 }

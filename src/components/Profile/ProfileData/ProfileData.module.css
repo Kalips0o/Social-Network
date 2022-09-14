@@ -1,0 +1,75 @@
+.item div {
+    /*font-family: Century;*/
+    color: #000101;
+    font-size: 15px;
+    font-weight: 400;
+
+}
+
+.item .fullName {
+    /*font-family: Century;*/
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: #000101;
+    font-size: 25px;
+    font-weight: bolder;
+
+    /* text-transform: uppercase; */
+}
+
+.button {
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    color: white;
+    /* padding: 3px 6px; */
+    border-radius: 10px;
+    letter-spacing: 1px;
+    background-image: linear-gradient(to right, #565456 0%, #a80815 51%, #000101 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 40px rgba(0, 0, 0, .1);
+    transition: .7s;
+}
+
+.button:hover {
+    background-position: right center;
+    transform: scale(1.02);
+}
+
+
+.contacts {
+    justify-content: space-between;
+    min-width: 323px;
+}
+
+.contactsInput {
+    justify-content: space-between;
+    width: 325px;
+}
+
+.contacts span {
+    /* font-size: 19px; */
+    color: rgb(2, 20, 93)
+}
+
+
+.contactsInput input {
+    float: right;
+}
+
+.item li {
+    margin-left: 10px;
+}
+
+.item input {
+    border: 1px solid #77d6e0;
+    outline: none;
+    cursor: pointer;
+    font: inherit;
+    /* margin: -2px 0; */
+    border-radius: 7px;
+    background-image: linear-gradient(to right, #daf9f4 0%, #d9e1ff 51%, #daf7f2 100%);
+    font-size: 14px;
+    color: #366c8f;
+    transition: .5s;
+}
