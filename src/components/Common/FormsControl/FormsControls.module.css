@@ -13,3 +13,9 @@
     padding: 5px;
     color: darkred;
 }
+
+.login {
+    height: 300px;
+    weight: 300px;
+    border: black;
+}
