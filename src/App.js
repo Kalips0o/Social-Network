@@ -45,6 +45,8 @@ class App extends Component {
                 <Navbar/>
                 <div className='app-wrapper-content'>
                     <Switch>
+                        <Route exact path='/Social-network'
+                               render={() => <Redirect to={"/Profile"}/>}/>
 
                         <Route exact path='/'
                                render={() => <Redirect to={"/Profile"}/>}/>
