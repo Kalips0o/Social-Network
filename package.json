@@ -6,10 +6,12 @@
   "dependencies": {
     "@material-ui/core": "^4.12.4",
     "@mui/material": "^5.10.5",
+    "@types/classnames": "^2.3.1",
     "@types/jest": "^29.2.3",
     "@types/node": "^18.11.10",
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.9",
+    "@types/react-router-dom": "^5.3.3",
     "@types/redux-form": "^8.3.5",
     "axios": "^0.27.2",
     "classnames": "^2.3.1",

@@ -61,7 +61,7 @@ class App extends Component {
                         <Route path='/profile:userId?'
                                render={withSuspense(ProfileContainer)}/>
                         <Route path='/users'
-                               render={withSuspense(UsersContainer)}/>
+                               render={withSuspense(UsersContainer  )}/>
                         <Route path='/music' render={() => <Music/>}/>
                         <Route path='/news' render={() => <News/>}/>
                         <Route path='/setting' render={() => <Setting/>}/>

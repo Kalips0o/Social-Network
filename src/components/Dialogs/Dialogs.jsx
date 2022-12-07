@@ -11,7 +11,7 @@ const Dialogs = (props) => {
     let state = props.dialogsPage;
 
     let dialogsElements = state.dialogs.map(d => <DialogItem name={d.name} key={d.id} id={d.id}/>);
-    let messagesElements = state.messages.map(m => <Message message={m.message} name={m.sender} key={m.id}
+    let messagesElements = state.messages.map(m => <Message message={m.messageText} name={m.sender} key={m.id}
                                                             messageTime={m.messageTime}/>);
     let newMessageBody = state.newMessageBody;
 
@@ -36,13 +36,6 @@ const Dialogs = (props) => {
 }
 
 export default Dialogs;
-
-
-
-
-
-
-
 
 
 
