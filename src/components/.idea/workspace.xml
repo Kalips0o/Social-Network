@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4fd158d8-c74a-48aa-af2e-749d1aba44f5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../@types/assets.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../assets/img/UserPhoto/man_avatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../assets/img/UserPhoto/woman_avatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../redux/dialogsReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/Paginator/Paginator.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Common/Paginator/Paginator.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dialogs/AddMessageForm/AddMessageForm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dialogs/AddMessageForm/AddMessageForm.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dialogs/DialogItem/DialogItem.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dialogs/Dialogs.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dialogs/DialogsContainer.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dialogs/Message/Message.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Profile/ProfileInfo/ProfileStatus.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Profile/ProfileInfo/ProfileStatus.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Users/Users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Users/Users.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Users/UsersContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Users/UsersContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/../redux/redux-store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../redux/users-selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/../redux/users-selectors.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2IapHqomXl5RCAQubEMkkta3SD0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../tic-tac-toe game" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4fd158d8-c74a-48aa-af2e-749d1aba44f5" name="Changes" comment="" />
+      <created>1670429465396</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1670429465396</updated>
+      <workItem from="1670429466662" duration="2000" />
+    </task>
+    <servers />
+  </component>
+</project>
