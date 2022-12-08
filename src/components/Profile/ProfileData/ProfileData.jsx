@@ -22,10 +22,8 @@ export const ProfileData = ({profile, isOwner, goToEditMode}) => {
             <li><span>facebook:</span> {profile.contacts.facebook}</li>
             <li><span>github:</span> {profile.contacts.github}</li>
             <li><span>instagram:</span> {profile.contacts.instagram}</li>
-            <li><span>mainLink:</span> {profile.contacts.mainLink}</li>
             <li><span>twitter:</span> {profile.contacts.twitter}</li>
             <li><span>vk:</span> {profile.contacts.vk}</li>
-            <li><span>website:</span> {profile.contacts.website}</li>
             <li><span>youtube:</span> {profile.contacts.youtube}</li>
         </div>
         {isOwner && <div>
