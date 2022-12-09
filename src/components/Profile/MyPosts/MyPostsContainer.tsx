@@ -1,8 +1,8 @@
-import { Dispatch } from "redux";
-import { connect } from "react-redux";
+import {Dispatch} from "redux";
+import {connect} from "react-redux";
 
-import { MyPosts } from "./MyPosts";
-import { AppStateType } from "../../../redux/redux-store";
+import {MyPosts} from "./MyPosts";
+import {AppStateType} from "../../../redux/redux-store";
 
 
 import {PostType} from "./Post/Post";
@@ -12,8 +12,8 @@ export type MyPostPropsType = mapStateToPropsType & mapDispatchToPropsType;
 
 export type mapStateToPropsType = {
     posts: Array<PostType>
-        profile: any
-status?: string
+    profile: any
+    status?: string
 }
 
 const mapStateToProps = (state: AppStateType): mapStateToPropsType => {

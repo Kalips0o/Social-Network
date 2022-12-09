@@ -11,7 +11,7 @@ export type PostType = {
 }
 
 function Post(props: PostType) {
-    const photo = props.profile?.photos?.small ? props.profile.photos.small : userPhoto;
+  const photo = props.profile?.photos?.small ? props.profile.photos.small : userPhoto;
 
     return (
         <div className={s.item}>

@@ -8,7 +8,7 @@ import defaultAvatar from "./../../assets/img/UserPhoto/user.webp"
 
 const Header = (props) => {
 
-    const photo = props.profile?.photos?.small ? props.profile.photos.small : defaultAvatar;
+    // const photo = props.profile?.photos?.small ? props.profile.photos.small : defaultAvatar;
 
     console.log(props)
     return <header className={s.header}>
@@ -19,9 +19,9 @@ const Header = (props) => {
             {props.isAuth ?
                 <div className={s.loggedUser}>
 
-                    <div className={s.avatar}>
-                        <img className={s.avatar} src={photo}  />
-                    </div>
+                    {/*<div className={s.avatar}>*/}
+                    {/*    <img className={s.avatar} src={photo}  />*/}
+                    {/*</div>*/}
 
 
                     <span className={s.name}>{props.login}</span>
