@@ -38,7 +38,7 @@ export const profileAPI = {
         return instance.get(`profile/status/` + userId);
     },
     updateStatus(status: string) {
-        return instance.put(`profile/status`, { status: status });
+        return instance.put(`profile/status`, {status: status});
     },
     savePhoto(photoFile: any) {
         const formData = new FormData();
@@ -51,7 +51,7 @@ export const profileAPI = {
         });
     },
     saveProfile(profile: ProfileType) {
-        return instance.put(`profile`, profile );
+        return instance.put(`profile`, profile);
     }
 }
 
@@ -87,15 +87,14 @@ export const authAPI = {
     me() {
         return instance.get<MeResponseType>(`auth/me`).then(res => res.data);
     },
-    login(email: string, password: string, rememberMe = false, captcha: null | string = null ) {
-        return instance.post<LoginResponseType>(`auth/login`, { email, password, rememberMe, captcha })
+    login(email: string, password: string, rememberMe = false, captcha: null | string = null) {
+        return instance.post<LoginResponseType>(`auth/login`, {email, password, rememberMe, captcha})
             .then(res => res.data);
     },
     logout() {
         return instance.delete(`auth/login`);
     }
 }
-
 
 
 export const securityAPI = {
