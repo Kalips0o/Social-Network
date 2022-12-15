@@ -26,9 +26,9 @@ export const ProfileData = ({profile, isOwner, goToEditMode}) => {
             <li><span>vk:</span> {profile.contacts.vk}</li>
             <li><span>youtube:</span> {profile.contacts.youtube}</li>
         </div>
-        {isOwner && <div>
-            <button className={s.button} onClick={goToEditMode}>edit</button>
-        </div>}
+        <div> {isOwner &&
+            <button className={s.button} onClick={goToEditMode}>edit</button>}
+        </div>
     </div>
 }
 
