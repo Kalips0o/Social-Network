@@ -4,9 +4,19 @@ import DialogItem from "./DialogItem/DialogItem";
 import Message from "./Message/Message";
 import {Redirect} from "react-router-dom";
 import AddMessageForm from "./AddMessageForm/AddMessageForm";
+import {InitialStateType} from "../../redux/dialogs-reducer";
 
 
-const Dialogs = (props) => {
+type PropsType = {
+    isAuth: boolean;
+    dialogsPage: InitialStateType
+    sendMessage: (messageText: string) => void
+}
+
+export type NewMessageFormValuesType = {
+    newMessageBody: string
+}
+const Dialogs = (props: PropsType) => {
 
     let state = props.dialogsPage;
 
@@ -15,7 +25,7 @@ const Dialogs = (props) => {
                                                             messageTime={m.messageTime}/>);
 
 
-    let addNewMessage = (values) => {
+    let addNewMessage = (values: NewMessageFormValuesType) => {
         props.sendMessage(values.newMessageBody);
     }
 
@@ -31,6 +41,7 @@ const Dialogs = (props) => {
 
             </div>
             <AddMessageForm onSubmit={addNewMessage}/>
+
         </div>
     )
 }
