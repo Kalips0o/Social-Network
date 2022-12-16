@@ -19,7 +19,7 @@ let rootReducer = combineReducers({
     app: appReducer
 })
 
-type RootReducerType = typeof rootReducer; // (globalstate: AppStateType) => AppStateType
+export type RootReducerType = typeof rootReducer; // (globalstate: AppStateType) => AppStateType
 export type AppStateType = ReturnType<RootReducerType>
 
 export type InferActionsTypes<T> = T extends { [keys: string]: (...args: any[]) => infer U } ? U : never
