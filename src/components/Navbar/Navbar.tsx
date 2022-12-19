@@ -9,7 +9,7 @@ import SettingIco from './../../assets/img/Icons/setting.png';
 import UsersIco from './../../assets/img/Icons/users.png';
 
 
-const NavBar = () => {
+const NavBar: React.FC = () => {
     return <nav className={s.nav}>
         <div className={s.item}>
             <NavLink to={'/profile'} activeClassName={s.active}>

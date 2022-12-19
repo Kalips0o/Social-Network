@@ -2,7 +2,14 @@ import React from 'react';
 import s from './Message.module.css';
 import avatar from './../../../assets/img/UserPhoto/user.webp'
 
-export const Message = (props) => {
+type PropsType = {
+    message: string
+    name:string
+    messageTime:string
+}
+
+
+export const Message:React.FC<PropsType> = (props) => {
     const messageClassName = `${s.message} ${props.name === "Me" ? s.outgoing : s.incoming}`;
     const avatarSrc = props.name === "Me" ? avatar : avatar;
 

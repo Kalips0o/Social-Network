@@ -1,13 +1,12 @@
 import React from 'react';
 
 
-
-const News = () => {
+const Friends:React.FC = () => {
     return (
         <div>
-            News
+            FRIENDS
         </div>
     )
 }
 
-export default News
+export default Friends
