@@ -61,8 +61,8 @@ class App extends Component<MapPropsType & DispatchPropsType> {
                         <Route path='/profile/:userId?'
                                render={() => <SuspendedProfile/>}/>
 
-                        <Route path='/profile:userId?'
-                               render={withSuspense(ProfileContainer)}/>
+                        {/*<Route path='/profile:userId?'*/}
+                        {/*       render={withSuspense(ProfileContainer)}/>*/}
 
 
                         <Route path='/users' render={() => <UsersContainer pageTitle={''}/>}/>

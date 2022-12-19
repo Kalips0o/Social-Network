@@ -1,8 +1,14 @@
 import React from 'react';
 import s from './ProfileData.module.css';
+import {ProfileType} from "../../../types/types";
 
+type ProfileDataPropsType = {
+    profile: ProfileType
+    isOwner: boolean
+    goToEditMode: () => void
+}
 
-export const ProfileData = ({profile, isOwner, goToEditMode}) => {
+export const ProfileData: React.FC<ProfileDataPropsType> = ({profile, isOwner, goToEditMode}) => {
     return <div className={s.item}>
         <div className={s.fullName}>
             {profile.fullName}
