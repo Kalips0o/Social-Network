@@ -25,7 +25,7 @@ const Profile: React.FC<PropsType> = (props) => {
                          saveProfile={props.saveProfile}
                          updateStatus={props.updateStatus}/>
 
-            <MyPostsContainer/>
+            <MyPostsContainer />
         </div>
     )
 }

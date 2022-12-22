@@ -22,11 +22,16 @@
 }
 
 .itemImg img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 1px ridge #000101;
+
+  height:70px;
+  width: 70px;
+  border: 4px ridge #000101;
+  border-radius: 50%
+  /*width: 60px;*/
+  /*height: 60px;*/
+  /*border-radius: 70%;*/
+  /*object-fit: cover;*/
+  /*border: 3px ridge #000101;*/
 }
 
 .itemText {
