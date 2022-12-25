@@ -6,7 +6,7 @@
 
 .loginBox {
     /* position: relative; */
-    width: 1280px;
+    width: 1000px;
     height: 720px;
 }
 
@@ -14,15 +14,15 @@
     position: absolute;
     width: 413px;
     height: 540px;
-    left: 434px;
+    left: 300px;
     top: 84px;
 
-    background: rgb(215, 231, 242);
+    background: rgba(159, 161, 161, 0.66);
     border-radius: 18px;
 }
 
 .formGroup {
-    margin: 40px 33px 0 33px;
+    margin: 15px 33px 0 33px;
 }
 
 
@@ -48,19 +48,19 @@
     font-weight: 600;
     font-size: 32px;
     text-align: center;
-    color: #2D2E46;
+    color: #000101;
 }
 
 
 .signIn {
-    margin: 20px;
+    /*margin: 20px;*/
     font-style: normal;
     font-weight: 600;
     font-size: 25px;
     line-height: 33px;
 
     text-align: center;
-    color: #2D2E46;
+    color: #100f0f;
 }
 
 
@@ -73,12 +73,12 @@
     height: 36px;
     width: 266px;
     font-size: 17px;
-    margin: 45px 60px 0 40px;
+    margin: 20px 60px 0 40px;
     border-radius: 20px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    background-image: linear-gradient(to right, #95eff5 0%, #4e79a1 51%, #8fcded 100%);
-    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    background-image: linear-gradient(to right, rgba(38, 38, 38, 0.5) 0%, rgba(159, 161, 161, 0.49) 51%, #ec0b0b 100%);
+    box-shadow: 0 0 20px rgb(255, 253, 253);
     background-size: 200% auto;
     transition: .5s;
 }
@@ -86,5 +86,11 @@
 .loginButton:hover {
     background-position: right center;
     transform: scale(1.01);
+}
+
+.logo {
+    width: 180px;
+
+    margin-top: 5px;
 }
 

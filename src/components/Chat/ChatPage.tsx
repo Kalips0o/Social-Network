@@ -5,6 +5,8 @@ import AlternativeMessage from './AlternativeMessage'
 import MessageComponent from '../../components/Dialogs/Message/Message'
 import {sendMessage, startMessagesListening, stopMessagesListening} from "../../redux/chat-reducer";
 import {ChatMessageAPIType} from "../../api/chat-api";
+import {Redirect} from "react-router-dom";
+import {message} from "antd";
 
 
 const ChatPage: React.FC = () => {

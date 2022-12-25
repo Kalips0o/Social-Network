@@ -15,6 +15,7 @@ import Preloader from "./components/Common/Preloader/Preloader";
 import {withSuspense} from "./hoc/withSuspense";
 import store, {AppStateType} from "./redux/redux-store";
 import ChatPage from "./components/Chat/ChatPage";
+import {Login} from "./components/Login/LoginPage";
 
 const DialogsContainer = React.lazy(() => import('./components/Dialogs/DialogsContainer'));
 const ProfileContainer = React.lazy(() => import('./components/Profile/ProfileContainer'));
@@ -71,7 +72,7 @@ class App extends Component<MapPropsType & DispatchPropsType> {
 
                         <Route path='/news' render={() => <News/>}/>
                         <Route path='/setting' render={() => <Setting/>}/>
-                        <Route path='/login' render={() => <LoginPage/>}/>
+                        <Route path='/login' render={() => <Login/>}/>
                         <Route path='*' render={() => <div>404 NOT FOUND</div>}/>
 
                     </Switch>
