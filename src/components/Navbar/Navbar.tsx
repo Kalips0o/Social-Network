@@ -17,10 +17,15 @@ const NavBar: React.FC = () => {
             </NavLink>
         </div>
 
-
         <div className={s.item}>
             <NavLink to={'/Dialogs'} activeClassName={s.active}>
                 <img src={MessagesIco}/> Messages
+            </NavLink>
+        </div>
+
+        <div className={s.item}>
+            <NavLink to={'/Chat'} activeClassName={s.active}>
+                <img src={MessagesIco}/> Chat
             </NavLink>
         </div>
 

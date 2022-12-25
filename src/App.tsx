@@ -14,6 +14,7 @@ import {initializeApp} from "./redux/app-reducer";
 import Preloader from "./components/Common/Preloader/Preloader";
 import {withSuspense} from "./hoc/withSuspense";
 import store, {AppStateType} from "./redux/redux-store";
+import ChatPage from "./components/Chat/ChatPage";
 
 const DialogsContainer = React.lazy(() => import('./components/Dialogs/DialogsContainer'));
 const ProfileContainer = React.lazy(() => import('./components/Profile/ProfileContainer'));
@@ -64,7 +65,7 @@ class App extends Component<MapPropsType & DispatchPropsType> {
                         <Route path='/profile:userId?'
                                render={withSuspense(ProfileContainer)}/>
 
-
+                        <Route path='/chat' render={() => <ChatPage />}/>
                         <Route path='/users' render={() => <UsersContainer pageTitle={''}/>}/>
                         <Route path='/music' render={() => <Music/>}/>
 
