@@ -15,6 +15,7 @@ class HeaderContainer extends React.Component<MapPropsType & DispatchPropsType> 
 const mapStateToProps = (state:AppStateType) => ({
     isAuth: state.auth.isAuth,
     login: state.auth.login,
+    photo:state.profilePage.profile?.photos
 });
 
 export default connect<MapPropsType, DispatchPropsType, {}, AppStateType>(

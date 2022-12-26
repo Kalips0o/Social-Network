@@ -36,7 +36,7 @@ const LoginForm = () => {
     const formik = useFormik({
         initialValues: {
             email: 'kalipsoo92@gmail.com',
-            password: 'Kalipso08111992',
+            password: 'Kalipso',
             rememberMe: false,
         },
         validate: (values) => {

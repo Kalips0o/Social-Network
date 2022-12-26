@@ -2,7 +2,7 @@ import React from 'react';
 import s from './Header.module.scss';
 import {NavLink} from "react-router-dom";
 import Logo from "./../../assets/img/Logo/LogoWhiteBlack.png";
-
+import defaultAvatar from "./../../assets/img/UserPhoto/user.webp"
 
 export type MapPropsType = {
     isAuth: boolean
@@ -13,9 +13,9 @@ export type DispatchPropsType = {
 }
 
 
-const Header: React.FC<MapPropsType & DispatchPropsType> = (props) => {
+const Header: React.FC<MapPropsType & DispatchPropsType> = (props, state) => {
 
-    // const photo = props.profile?.photos?.small ? props.profile.photos.small : defaultAvatar;
+    const photo = state.profile?.photos?.small ? state.profile.photos.small : defaultAvatar;
 
     console.log(props)
     return <header className={s.header}>
@@ -26,9 +26,9 @@ const Header: React.FC<MapPropsType & DispatchPropsType> = (props) => {
             {props.isAuth ?
                 <div className={s.loggedUser}>
 
-                    {/*<div className={s.avatar}>*/}
-                    {/*    <img className={s.avatar} src={photo}  />*/}
-                    {/*</div>*/}
+                    <div className={s.avatar}>
+                        <img className={s.avatar} src={photo}  />
+                    </div>
 
 
                     <span className={s.name}>{props.login}</span>
