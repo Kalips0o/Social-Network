@@ -7,15 +7,15 @@ import News from "./components/News/News";
 import Setting from "./components/Setting/Setting";
 import UsersContainer from "./components/Users/UsersContainer";
 import HeaderContainer from "./components/Header/HeaderContainer";
-import LoginPage from "./components/Login/Login";
 import {connect, Provider} from "react-redux";
 import {compose} from "redux";
 import {initializeApp} from "./redux/app-reducer";
 import Preloader from "./components/Common/Preloader/Preloader";
 import {withSuspense} from "./hoc/withSuspense";
 import store, {AppStateType} from "./redux/redux-store";
-import ChatPage from "./components/Chat/ChatPage";
 import {Login} from "./components/Login/LoginPage";
+import ChatPage from "./components/Chat/ChatPage";
+
 
 const DialogsContainer = React.lazy(() => import('./components/Dialogs/DialogsContainer'));
 const ProfileContainer = React.lazy(() => import('./components/Profile/ProfileContainer'));
@@ -49,11 +49,11 @@ class App extends Component<MapPropsType & DispatchPropsType> {
         }
 
         return (
-            <div className='app-wrapper'>
+            <div className="app">
                 <HeaderContainer/>
-                <Navbar/>
-                <div className='app-wrapper-content'>
-                    <Switch>
+                {/*<Navbar/>*/}
+                <div className='wrapper'>
+                    <div className='content'> <Switch>
                         <Route exact path='/Social-network'
                                render={() => <Redirect to={"/Profile"}/>}/>
 
@@ -66,16 +66,17 @@ class App extends Component<MapPropsType & DispatchPropsType> {
                         <Route path='/profile:userId?'
                                render={withSuspense(ProfileContainer)}/>
 
+
                         <Route path='/chat' render={() => <ChatPage />}/>
                         <Route path='/users' render={() => <UsersContainer pageTitle={''}/>}/>
                         <Route path='/music' render={() => <Music/>}/>
-
                         <Route path='/news' render={() => <News/>}/>
                         <Route path='/setting' render={() => <Setting/>}/>
                         <Route path='/login' render={() => <Login/>}/>
                         <Route path='*' render={() => <div>404 NOT FOUND</div>}/>
 
-                    </Switch>
+                    </Switch> </div>
+
                 </div>
             </div>
         )

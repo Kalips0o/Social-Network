@@ -30,25 +30,25 @@ const NavBar: React.FC = () => {
         </div>
 
 
-        <div className={s.item}>
-            <NavLink to={'/News'} activeClassName={s.active}>
-                <img src={NewsIco}/> News
-            </NavLink>
-        </div>
+        {/*<div className={s.item}>*/}
+        {/*    <NavLink to={'/News'} activeClassName={s.active}>*/}
+        {/*        <img src={NewsIco}/> News*/}
+        {/*    </NavLink>*/}
+        {/*</div>*/}
 
 
-        <div className={s.item}>
-            <NavLink to={'/Music'} activeClassName={s.active}>
-                <img src={MusicIco}/> Music
-            </NavLink>
-        </div>
+        {/*<div className={s.item}>*/}
+        {/*    <NavLink to={'/Music'} activeClassName={s.active}>*/}
+        {/*        <img src={MusicIco}/> Music*/}
+        {/*    </NavLink>*/}
+        {/*</div>*/}
 
 
-        <div className={s.item}>
-            <NavLink to={'/Setting'} activeClassName={s.active}>
-                <img src={SettingIco}/> Setting
-            </NavLink>
-        </div>
+        {/*<div className={s.item}>*/}
+        {/*    <NavLink to={'/Setting'} activeClassName={s.active}>*/}
+        {/*        <img src={SettingIco}/> Setting*/}
+        {/*    </NavLink>*/}
+        {/*</div>*/}
 
 
         <div className={s.item}>

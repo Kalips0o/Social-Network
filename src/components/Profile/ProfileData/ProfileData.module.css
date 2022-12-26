@@ -3,6 +3,7 @@
     color: #000101;
     font-size: 15px;
     font-weight: 400;
+    margin-top: 10px;
 
 }
 
@@ -59,17 +60,4 @@
 
 .item li {
     margin-left: 10px;
-}
-
-.item input {
-    border: 1px solid #77d6e0;
-    outline: none;
-    cursor: pointer;
-    font: inherit;
-    /* margin: -2px 0; */
-    border-radius: 7px;
-    background-image: linear-gradient(to right, #daf9f4 0%, #d9e1ff 51%, #daf7f2 100%);
-    font-size: 14px;
-    color: #366c8f;
-    transition: .5s;
 }

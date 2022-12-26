@@ -1,8 +1,7 @@
 
 import { Field, Form, Formik, FormikValues } from 'formik'
-// @ts-ignore
 import * as yup from 'yup';
-import styles from './../../Profile/MyPosts/MyPosts.module.css'
+import styles from './FormsControls.module.css';
 
 type PostFormPropsType = {
 	onSubmit: (post: string) => void

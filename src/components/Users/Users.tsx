@@ -20,7 +20,7 @@ type PropsType = {
 
 
 let Users:React.FC<PropsType> = ({currentPage, totalUsersCount, pageSize, onPageChanged, users, ...props}) => {
-    return <div>
+    return <div >
         <UsersSearchForm onFilterChanged={props.onFilterChanged}/>
         <Paginator currentPage={currentPage} onPageChanged={onPageChanged}
                    totalItemsCount={totalUsersCount} pageSize={pageSize}/>

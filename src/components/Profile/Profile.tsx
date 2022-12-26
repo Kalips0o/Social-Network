@@ -1,7 +1,9 @@
 import React from 'react'
 import ProfileInfo from "./ProfileInfo/ProfileInfo";
-import {MyPostsContainer} from "./MyPosts/MyPostsContainer";
+
 import {ProfileType} from "../../types/types";
+import s from "./Profile.module.css"
+import {MyPostsContainer} from "./MyPosts/MyPostsContainer";
 
 type PropsType = {
     profile: ProfileType | null
@@ -15,7 +17,7 @@ type PropsType = {
 const Profile: React.FC<PropsType> = (props) => {
 
     return (
-        <div>
+        <div className={s.profile}>
 
 
             <ProfileInfo savePhoto={props.savePhoto}
@@ -25,7 +27,7 @@ const Profile: React.FC<PropsType> = (props) => {
                          saveProfile={props.saveProfile}
                          updateStatus={props.updateStatus}/>
 
-            <MyPostsContainer />
+            <MyPostsContainer profile={undefined} posts={[]} />
         </div>
     )
 }

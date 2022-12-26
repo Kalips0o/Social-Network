@@ -32,7 +32,7 @@ export const UsersSearchForm: React.FC<PropsType> = React.memo((props) => {
         setSubmitting(false)
     }
 
-    return <div>
+    return <div >
         <Formik
             enableReinitialize
             initialValues={{term: filter.term, friend: String(filter.friend) as FriendFormType}}

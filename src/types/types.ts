@@ -2,6 +2,7 @@ export type PostType = {
     id: number
     message: string
     likesCount: number
+
 }
 export type ContactsType = {
     github: string
@@ -33,4 +34,20 @@ export type UserType = {
     status: string
     photos: PhotosType
     followed: boolean
+}
+
+export type ProfilePropsType = {
+    aboutMe: string;
+    contacts: ContactsType;
+    lookingForAJob: boolean;
+    lookingForAJobDescription: string;
+    fullName: string;
+    userId: number;
+    photos:  PhotosType;
+};
+export type ChatMessageAPIType = {
+    message: string
+    photo: string
+    userId: number
+    userName: string
 }

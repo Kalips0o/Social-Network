@@ -9,6 +9,7 @@ import { reducer as formReducer } from 'redux-form'
 import appReducer from "./app-reducer";
 import {dialogsReducer} from "./dialogs-reducer";
 import chatReducer from "./chat-reducer";
+// import chatReducer from "./chat-reducer";
 
 let rootReducer = combineReducers({
     profilePage: profileReducer,

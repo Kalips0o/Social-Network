@@ -1,0 +1,90 @@
+
+.ChatBlock {
+    margin-top: 10px;
+
+
+}
+
+.chat {
+
+    align-items: center;
+    display: flex;
+margin-left: 50px;
+    /*display: flex;*/
+    /*display: grid;*/
+    /*grid-template-columns: 0.3fr 0.1fr 1fr;*/
+    /*grid-template-rows: 1fr;*/
+    /*margin-top: 20px;*/
+
+}
+
+
+.senderInfo {
+    text-align: center;
+}
+
+.senderImg {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    /*border: 1px ridge #000101;*/
+}
+
+
+.description {
+    padding: 10px;
+    border-radius: 10px 10px 10px 0;
+    /*border-radius: 26px 26px 26px 0;*/
+    /* background-color: rgba(79, 140, 148, 0.452) */
+    background: rgba(38, 38, 38, 0.5);
+    /*background-image: linear-gradient(45deg, #93c3dd 0%, #33d8de96 50%, #133d92c8 100%);*/
+    /*background-position: 100% 0;*/
+    /* background-size: 200% 200%; */
+    font-family: 'Montserrat', sans-serif;
+    min-width: 70px;
+    max-width: 270px;
+
+
+}
+
+
+.angleSent {
+    width: 15px;
+    height: 15px;
+    background: radial-gradient(circle at 100% 0, rgba(30, 42, 39, 0) 15px, rgba(38, 38, 38, 0.5) 0);
+}
+
+.angle {
+    width: 15px;
+    height: 15px;
+    float: right;
+    background: radial-gradient(circle at 0 0, rgba(30, 42, 39, 0) 15px, rgba(38, 38, 38, 0.5) 0);
+}
+
+
+.message {
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    color: #ffffff;
+    margin: 10px;
+}
+
+
+.nameSent {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(0, 1, 1);
+}
+
+.textSent {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    min-width: 150px;
+    max-width: 300px;
+    word-wrap: break-word;
+}

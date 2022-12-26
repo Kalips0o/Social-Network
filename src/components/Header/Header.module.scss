@@ -1,13 +1,20 @@
 .header {
-
-  margin-top: 10px;
-  margin-bottom: 10px;
-  grid-area: h;
+  width: 100%;
+  background: #444444;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 15px 0;
+  height: 50px;
+//
+//  margin-top: 10px;
+//  margin-bottom: 10px;
+//  grid-area: h;
   /*border: 1px solid #9fa1a1;*/
   background: linear-gradient(-45deg, rgba(38, 38, 38, 0.5), #861717, #000101, #c7c7c7);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
-  height: 85px;
+  height: 50px;
 
 }
 
@@ -26,14 +33,14 @@
 
 
 .logo {
-  width: 140px;
-  margin-left: 30px;
+  width: 120px;
+  margin-left: 20px;
   margin-top: 5px;
 }
 
 .loginBlock {
-  margin-top: 20px;
-  margin-right: 25px;
+  margin-top: 5px;
+  margin-right: 10px;
   float: right;
 
   color: white;

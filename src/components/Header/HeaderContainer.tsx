@@ -3,6 +3,7 @@ import Header, {DispatchPropsType, MapPropsType} from "./Header";
 import {connect} from "react-redux";
 import {logout} from "../../redux/auth-reducer";
 import {AppStateType} from "../../redux/redux-store";
+import defaultAvatar from "../../assets/img/UserPhoto/user.webp";
 
 class HeaderContainer extends React.Component<MapPropsType & DispatchPropsType> {
 

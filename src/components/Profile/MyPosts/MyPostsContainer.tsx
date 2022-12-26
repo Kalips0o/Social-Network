@@ -36,10 +36,8 @@ const mapDispatchToProps = (dispatch: Dispatch): mapDispatchToPropsType => {
     }
 }
 
-export const MyPostsContainer = connect(mapStateToProps, mapDispatchToProps)(MyPosts);
 
-
-
-// export const MyPostsContainer = connect<MapPropsType, DispatchPropsType, {}, AppStateType>(mapStateToProps, {
-//     addPost: actions.addPostActionCreator
-// })(MyPosts);
+// @ts-ignore
+export const MyPostsContainer = connect<MapPropsType, DispatchPropsType, {}, AppStateType>(mapStateToProps, {
+    addPost: actions.addPostActionCreator
+})(MyPosts);

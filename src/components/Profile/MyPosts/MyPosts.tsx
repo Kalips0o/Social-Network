@@ -1,4 +1,4 @@
-import Post from "./Post/Post";
+import {Post} from "./Post/Post";
 import s from './MyPosts.module.css'
 import {PostForm} from "../../Common/FormsControl/PostForm";
 import {PostType} from "../../../types/types";
@@ -14,13 +14,15 @@ export type DispatchPropsType = {
 
 
 export const MyPosts = (props: MyPostPropsType) => {
-    const postsElements = props.posts.map((p, key) =>
+    const postsElements = props.posts.reverse().map((p, key) =>
         <Post key={key} profile={props.profile} message={p.message} likesCount={p.likesCount} />);
-
 
     return (
         <div className={s.postsBlock}>
-            <PostForm onSubmit={props.addPost}/>
+            <div className={s.addPost}> <PostForm  onSubmit={props.addPost}/></div>
+
+
+
             <div className={s.posts}>
                 {postsElements}
             </div>
