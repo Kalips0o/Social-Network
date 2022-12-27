@@ -1,11 +1,16 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSpinner } from "@fortawesome/free-solid-svg-icons/faSpinner";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
+import styles from "./Prelouder.module.css";
 import React from "react";
-import preloader from '../../../assets/img/Loading/Loading.gif';
-import styles from './Preloader.module.css'
 
-let Preloader:React.FC = (props) => {
-    return <div className={styles.preloader}>
-        <img src={preloader}/>
-    </div>
-
+ const Preloader = () => {
+    return (
+        <div className={styles.prelouder}>
+            <div className={styles.prelouderSpin}>
+                <FontAwesomeIcon icon={faSpinner as IconProp} spin={true} />
+            </div>
+        </div>
+    )
 }
-export default Preloader;
+export default Preloader

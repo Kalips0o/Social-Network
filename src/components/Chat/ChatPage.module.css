@@ -9,7 +9,7 @@
 
     align-items: center;
     display: flex;
-margin-left: 50px;
+    margin-left: 50px;
     /*display: flex;*/
     /*display: grid;*/
     /*grid-template-columns: 0.3fr 0.1fr 1fr;*/
@@ -87,4 +87,42 @@ margin-left: 50px;
     min-width: 150px;
     max-width: 300px;
     word-wrap: break-word;
+}
+
+.textarea {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.textarea textarea {
+    margin-left: 50px;
+    margin-right: 20px;
+    border: 1px solid #383838;
+    outline: none;
+    border-radius: 4px;
+    background: #c7c7c7;
+    padding: 5px 10px;
+    color: #000101;
+    height: 25px;
+    max-height: 100px;
+    width: 90%;
+
+}
+
+.textarea button {
+    margin-right: 50px;
+    padding: 0 20px;
+    border-radius: 4px;
+    border: none;
+    background: #565456;
+    color: #ffffff;
+    font-size: .7rem;
+    text-transform: uppercase;
+
+}
+
+.textarea button:hover {
+    cursor: pointer;
+    background: rgba(38, 38, 38, 0.5);
 }

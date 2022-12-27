@@ -105,13 +105,13 @@ const AddMessageForm: React.FC<{}> = () => {
         setMessage('')
     }
 
-    return <div>
-        <div >
-            <textarea onChange={(e) => setMessage(e.currentTarget.value)} value={message}></textarea>
+    return <div >
+        <div className={s.textarea}  >
+            <textarea onChange={(e) => setMessage(e.currentTarget.value)} value={message}></textarea >
+            <button disabled={status !== 'ready'} onClick={sendMessageHandler}>Send message</button>
+
         </div>
-        <div>
-            <button disabled={status !== 'ready'} onClick={sendMessageHandler}>Send</button>
-        </div>
+
     </div>
 }
 

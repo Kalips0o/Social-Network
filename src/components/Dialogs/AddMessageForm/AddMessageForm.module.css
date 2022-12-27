@@ -2,3 +2,53 @@
     display: block;
     padding: 5px 15px;
 }
+
+
+
+.messageButton:hover {
+    background-position: right center;
+    transform: scale(1.01);
+}
+
+
+.textareaMessage{
+    width: 500px;
+}
+
+.textarea {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.textarea textarea {
+margin-left: 120px;
+
+    border: 1px solid #383838;
+    outline: none;
+    border-radius: 4px;
+    background: #c7c7c7;
+    padding: 5px 10px;
+    color: #000101;
+    height: 30px;
+    max-height: 100px;
+    width: 100%;
+
+}
+
+.textarea button {
+    margin-right: 170px;
+    padding: 0 20px;
+    border-radius: 4px;
+    border: none;
+    background: #565456;
+    color: #ffffff;
+    font-size: .7rem;
+    text-transform: uppercase;
+
+}
+
+.textarea button:hover {
+    cursor: pointer;
+    background: rgba(38, 38, 38, 0.5);
+}

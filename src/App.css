@@ -63,13 +63,13 @@ body {
 }
 
 .textarea button {
-    margin-left: 15px;
+    margin-left: 20px;
     padding: 0 20px;
     border-radius: 4px;
     outline: none;
     border: none;
     background: #565456;
-    color: #ccc;
+    color: #ffffff;
     font-size: .7rem;
     text-transform: uppercase;
     font-weight: 600;
@@ -77,5 +77,5 @@ body {
 
 .textarea button:hover {
     cursor: pointer;
-    background: #63768d;
+    background: rgba(38, 38, 38, 0.5);
 }

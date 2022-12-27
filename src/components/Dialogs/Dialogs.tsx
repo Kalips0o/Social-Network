@@ -38,9 +38,10 @@ const Dialogs = (props: PropsType) => {
             </div>
             <div className={s.messages}>
                 <div>{messagesElements}</div>
+                <div ><AddMessageForm onSubmit={addNewMessage}/></div>
 
             </div>
-            <AddMessageForm onSubmit={addNewMessage}/>
+
 
         </div>
     )
