@@ -12,7 +12,7 @@
 
 .item {
     display: flex;
-    width: 900px;
+    width: 1120px;
     background-color: rgba(253, 255, 255, 0.31);
     border-radius: 30px;
     box-shadow: rgb(0 0 0 / 5%) 0px 6px 24px 0px, rgba(253, 255, 255, 0.31);

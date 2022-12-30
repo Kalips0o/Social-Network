@@ -1,7 +1,9 @@
 .descriptionBlock {
     display: grid;
     margin-left: 40px;
-    grid-template-columns: 260px   660px;
+    margin-right: 60px;
+    width: 100%;
+    grid-template-columns: 350px  800px;
 }
 
 .status {
